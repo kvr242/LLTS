@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Landlord Tenant System - HOME</title>
+<meta></meta>    
+<link rel="shortcut icon" href="img/project logo.png" type="image/x-icon"/>
+<link href="./css/style.css" rel="stylesheet" type="text/css"/>
+<link href="./css/custom.css" rel="stylesheet" type="text/css"/>
+<style>
+
+/* main level link hover */
+#nav .current a, #nav li:hover > a {
+	//background: #666 url(img/gradient.png) repeat-x 0 -40px; //change
+        background: white url(img/gradient.png) repeat-x 0 -40px;
+	color: #444;
+	border-top: solid 1px #f8f8f8;
+
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0, .2);
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0, .2);
+	box-shadow: 0 1px 1px rgba(0,0,0, .2);
+
+	text-shadow: 0 1px 0 rgba(255,255,255, 1);
+}
+</style>
+<script>
+    
+    
+    function toHome(){
+        document.forms.loginform.action = "index.html";
+    }
+    function toNext(){
+        //alert("Next page is to register");
+        document.forms.loginform.action = "dbalogin.jsp";
+        return true;
+    }
+    function toExit(){
+        if (confirm("Close Window?")) {
+          window.close();
+        
+        }
+    }
+</script>
+</head>
+<body>
+<table>
+	<tr>
+		<td><img src="img/project logo.png" width="110" height="100"></img></td>
+		<td><font size="6" color="black"  face="cursive">LandLord Tenant System</font></td>
+	</tr>
+</table>
+<ul id="nav">
+	<li class="current"><a href="index.html" title="Displays all the modules of Landlord Tenant System application">Home</a></li>
+	<li><a href="#" title="Login module">Login &#9660;</a>
+		<ul>
+			<li><a href="dbalogin.jsp" title="Admin login page">Data Administrator</a></li>
+			<li><a href="landlordlogin.jsp" title="LandLord login page">LandLord</a></li>
+                        <li><a href="tenantlogin.jsp" title="Tenant login page">Tenant</a></li>
+		</ul>
+	</li>
+	<li><a href="#" title="Registration module">Register &#9660;</a>
+		<ul>
+			<li><a href="dbaregister.jsp" title="Page for th administrator registration">Data Administrator</a></li>
+			<li><a href="landlordregister.jsp"  title="Page for th land lord registration">LandLord</a></li>
+                        <li><a href="tenantregister.jsp" title="Page for th tenant registration">Tenant</a></li>
+		</ul>
+	</li>
+        <li><a href="#" title="Evaluate module">Evaluate Us &#9660;</a>
+		<ul>
+			<li><a href="rateproperty.jsp" title="Page provides the rating for the posted properties">Rate Property</a></li>
+			<li><a href="ratelandLord.jsp" title="Page provides the rating for the land lord">Rate LandLord</a></li>
+                        <li><a href="ratetenant.jsp" title="Page provides the rating for the tenant">Rate Tenant</a></li>
+		</ul>
+	</li>
+	<!--<li><a href="postproperties.jsp" title="Page provides to add posted properties">Add Property</a></li>-->
+	<li><a href="#" title="Reports module">Reports &#9660;</a>
+			<ul>
+				<li><a href="myaccount.jsp" title="Page provides logger profile">My Account</a></li>
+				<li><a href="updatedatabase.jsp" title="Page provides to update the database">Update Database</a></li>
+                                <li><a href="propertydetails.jsp" title="Describes all Properties">Property Details</a></li>
+                                
+			</ul>
+	</li>
+        <li style="margin-right: 200px;"><a href="#" title="Query Request module">Query Request &#9660;</a>
+			<ul>
+                                <li><a href="viewpostedproperty.jsp"  title="View all the property information">Property Information</a></li>
+				<li><a href="viewallratings.jsp" title="View all the rating information">Rating Information</a></li>
+                                <!--<li><a href="myprofile.jsp">My Profile</a></li>-->
+			</ul>
+	</li>
+	<li><a href="aboutus.jsp" title="Describes all about the application">About us</a></li>
+	<li><a href="contactus.jsp" title="Describes all contacts">Contact us</a></li>
+</ul>
+
+
+<div style="margin-top: 100px;text-align: center;">
+<font size="6" color="black"  face="cursive" >Are you a registered user?</font></br>
+If yes then please login with your Userid.</br></br></br>
+</div>
+<div style="margin-top: 50px;text-align: center;margin-bottom: 10px;">
+<font size="6" color="black"  face="cursive" >Are you an new user?</font></br>
+Then you can register with us by clicking Register.</br></br></br>
+
+</div>
+<section class="container11" >
+    <div >
+	<form name="loginform" method="post" autocomplete="off" action="">
+             <center>
+                <input type="submit" name="home" onclick="return toHome()" value="HOME" />
+		<input type="submit" name="next" onclick="return toNext();" value="NEXT"/> 
+		<input type="submit" name="exit" onclick="return toExit();" value="EXIT"/>
+            </center>
+	</form>
+    </div>
+</section>
+
+<!--<div id="footer" style="margin-top: 50px;">
+    <a href="#"></a>
+</div>-->
+
+</body>
+</html>

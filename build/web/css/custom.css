@@ -1,0 +1,245 @@
+@CHARSET "ISO-8859-1";
+#intro{border-bottom:1px solid #fff; position:relative; z-index:90;}
+#intro .inner{padding:55px 0;}
+#intro p{color:#fff; margin-bottom:20px; padding-right:20%;}
+#intro .button{text-shadow:-1px -1px 0 #ff6d00; text-transform:none; border:0; font-size:13px; background-color:#ff9a01; border-radius:5px; color:#fff; display:inline-block; padding:15px 40px; text-decoration:none; box-shadow:0 2px 2px #2596b7;  border-top:1px solid #ffe702; background:-moz-linear-gradient(top, #ffc101 0%, #ff9a01); background:-webkit-gradient(linear, left top, left bottom, from(#ffc101), to(#ff9a01));}
+#intro .button:hover{background:-moz-linear-gradient(top, #ff9a01 0%, #ffc101); background:-webkit-gradient(linear, left top, left bottom, from(#ff9a01), to(#ffc101));}
+#intro .button span{color:#b1b1b1; font-weight:100;}
+//form{margin:0px 0 0; background:#eee;  border:2px solid #e5e5e5; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;}
+form fieldset{padding:10px 40px 20px; color:#737373;}
+form .text{border:1px solid #d6d6d6; background:#fff; width:350px; padding:8px; font-size:12px; margin:0 10px; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px;}
+form .text:hover{border-color:#aeaeae;}
+
+/***FIRST STYLE THE BUTTON***/
+input#submitbutton {
+cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
+padding: 2px 10px;
+/*give the background a gradient - see cssdemos.tupence.co.uk/gradients.htm for more info*/
+background-color:#f8f8f8; /*required for browsers that don't support gradients*/
+background: -webkit-gradient(linear, left top, left bottom, from(#888), to(#f8f8f8));
+background: -webkit-linear-gradient(top, #888, #f8f8f8);
+background: -moz-linear-gradient(top, #888, #f8f8f8);
+background: -o-linear-gradient(top, #888, #f8f8f8);
+background: linear-gradient(top, #888, #f8f8f8);
+/*style to the text inside the button*/
+font-family:Andika, Arial, sans-serif; /*Andkia is available at http://www.google.com/webfonts/specimen/Andika*/
+font-weight:bolder;
+color:#888;
+font-size:1.1em;
+letter-spacing:.1em;
+font-variant:small-caps;
+/*give the corners a small curve*/
+-webkit-border-radius: 0 10px 10px 0;
+-moz-border-radius: 0 10px 10px 0;
+border-radius: 0 10px 10px 0;
+/*add a drop shadow to the button*/
+-webkit-box-shadow: rgba(0, 0, 0, .75) 0 2px 6px;
+-moz-box-shadow: rgba(0, 0, 0, .75) 0 2px 6px;
+box-shadow: rgba(0, 0, 0, .75) 0 2px 6px;
+}
+/***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+input#submitbutton:hover, input#submitbutton:focus {
+color:#edebda;
+/*reduce the spread of the shadow to give a pushed effect*/
+-webkit-box-shadow: rgba(0, 0, 0, .25) 0 1px 0px;
+-moz-box-shadow: rgba(0, 0, 0, .25) 0 1px 0px;
+box-shadow: rgba(0, 0, 0, .25) 0 1px 0px;
+}
+.container11 {
+	margin: 20px auto;
+	width: 640px;
+	line-height: 1;
+        
+}
+
+.login11 {
+	position: relative;
+	margin: 0 auto;
+	padding: 20px 20px 20px;
+	width: 400px;
+	background: white;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px
+		rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px
+		rgba(0, 0, 0, 0.3);
+}
+
+.login11:before {
+	content: '';
+	position: absolute;
+	top: -8px;
+	right: -8px;
+	bottom: -8px;
+	left: -8px;
+	z-index: -1;
+	background: rgba(0, 0, 0, 0.08);
+	border-radius: 4px;
+}
+
+.login11 h1 {
+	margin: -20px -20px 21px;
+	line-height: 40px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #555;
+	text-align: center;
+	text-shadow: 0 1px white;
+	background: #f3f3f3;
+	border-bottom: 1px solid #cfcfcf;
+	border-radius: 3px 3px 0 0;
+	background-image: -webkit-linear-gradient(top, whiteffd, #eef2f5);
+	background-image: -moz-linear-gradient(top, whiteffd, #eef2f5);
+	background-image: -o-linear-gradient(top, whiteffd, #eef2f5);
+	background-image: linear-gradient(to bottom, whiteffd, #eef2f5);
+	-webkit-box-shadow: 0 1px whitesmoke;
+	box-shadow: 0 1px whitesmoke;
+}
+
+.login11 p {
+	margin: 20px 0 0;
+	padding: 0 45px;
+}
+
+.login11 p:first-child {
+	margin-top: 0;
+}
+
+.login11 input[type=text],.login11 input[type=password] {
+	width: 278px;
+}
+
+.login11 p.submit {
+	text-align: center;
+}
+
+:-moz-placeholder {
+	color: #c9c9c9 !important;
+	font-size: 13px;
+}
+
+::-webkit-input-placeholder {
+	color: #ccc;
+	font-size: 13px;
+}
+
+input {
+	font-family: 'Lucida Grande', Tahoma, Verdana, sans-serif;
+	font-size: 14px;
+}
+
+select {
+	font-family: 'Lucida Grande', Tahoma, Verdana, sans-serif;
+	font-size: 14px;
+    margin: 2px;
+	padding: 0 10px;
+	width: 300px;
+	height: 34px;
+	color: #404040;
+	background: white;
+	border: 1px solid;
+	//border-color: #c4c4c4 #d1d1d1 #d4d4d4; //change
+	border-radius: 2px;
+	//outline: 5px solid #eff4f7; //change
+	-moz-outline-radius: 3px;
+	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+input[type=text],input[type=password] {
+	margin: 2px;
+	padding: 0 10px;
+	width: 200px;
+	height: 34px;
+	color: #404040;
+	background: white;
+	border: 1px solid;
+	border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+	border-radius: 2px;
+	//outline: 5px solid #eff4f7; //change
+        
+	-moz-outline-radius: 3px;
+	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+input[type=text]:focus,input[type=password]:focus {
+	//border-color: #7dc9e2;  //change
+	//outline-color: #dceefc;  //change
+	outline-offset: 0;
+}
+/*
+input[type=submit] {
+	padding: 0 18px;
+	height: 29px;
+	font-size: 12px;
+	font-weight: bold;
+	//color: #527881;  //change
+	text-shadow: 0 1px #e3f1f1;
+	//background: #cde5ef; //change
+	border: 1px solid;
+	//border-color: #b4ccce #b3c0c8 #9eb9c2;   //change
+        border-color: white white white; 
+	border-radius: 16px;
+	outline: 0;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	//background-image: -webkit-linear-gradient(top, #edf5f8, #cde5ef);
+	//background-image: -moz-linear-gradient(top, #edf5f8, #cde5ef);
+	//background-image: -o-linear-gradient(top, #edf5f8, #cde5ef);
+	//background-image: linear-gradient(to bottom, #edf5f8, #cde5ef);   //change
+        background-image: -webkit-linear-gradient(top, white, white);
+	background-image: -moz-linear-gradient(top, white, white);
+	background-image: -o-linear-gradient(top, white, white);
+	background-image: linear-gradient(to bottom, white, white);
+	-webkit-box-shadow: inset 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.15);
+	box-shadow: inset 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+input[type=submit]:active {
+	//background: #cde5ef; //change
+	border-color: #9eb9c2 #b3c0c8 #b4ccce;
+	-webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+}
+*/
+/*
+input[type=reset] {
+	padding: 0 18px;
+	height: 29px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #527881;
+	text-shadow: 0 1px #e3f1f1;
+	background: #cde5ef;
+	border: 1px solid;
+	border-color: #b4ccce #b3c0c8 #9eb9c2;
+	border-radius: 16px;
+	outline: 0;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	background-image: -webkit-linear-gradient(top, #edf5f8, #cde5ef);
+	background-image: -moz-linear-gradient(top, #edf5f8, #cde5ef);
+	background-image: -o-linear-gradient(top, #edf5f8, #cde5ef);
+	background-image: linear-gradient(to bottom, #edf5f8, #cde5ef);
+	-webkit-box-shadow: inset 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.15);
+	box-shadow: inset 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+input[type=reset]:active {
+	background: #cde5ef;
+	border-color: #9eb9c2 #b3c0c8 #b4ccce;
+	-webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+}
+*/
+.lt-ie9 input[type=text],.lt-ie9 input[type=password] {
+	line-height: 34px;
+}
+
+
+
+
+/* TOOLTIP CSS FROM HERE */

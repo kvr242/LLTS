@@ -1,0 +1,121 @@
+create database llts_db;
+
+use llts_db;
+
+create table dbareg(
+firstname varchar(100) not null,
+lastname varchar(100) not null,
+userid varchar(100) not null primary key,
+password varchar(100) not null,
+dbapassword varchar(100) not null,
+contactno varchar(100) not null,
+email varchar(150) not null,
+securityquestion varchar(150) not null,
+securityanswer varchar(150) not null,
+regdate varchar(150) not null
+);
+
+create table landlordreg(
+firstname varchar(100) not null,
+lastname varchar(100) not null,
+agentname varchar(100) not null,
+userid varchar(100) not null primary key,
+password varchar(100) not null,
+uniquepassword varchar(100) not null,
+contactno varchar(100) not null,
+email varchar(150) not null,
+securityquestion varchar(150) not null,
+securityanswer varchar(150) not null,
+regdate varchar(150) not null,
+status varchar(150) not null
+);
+
+create table tenantreg(
+firstname varchar(100) not null,
+lastname varchar(100) not null,
+userid varchar(100) not null primary key,
+password varchar(100) not null,
+uniquepassword varchar(100) not null,
+contactno varchar(150) not null,
+email varchar(150) not null,
+securityquestion varchar(150) not null,
+securityanswer varchar(150) not null,
+regdate varchar(150) not null,
+status varchar(150) not null
+);
+
+create table llpostproperty(
+llloginid varchar(100) not null,
+propid int NOT NULL,
+propcategory varchar(100) not null,
+propfurnished varchar(100) not null,
+propname varchar(255) not null,
+proptype varchar(255) not null,
+proprentamount varchar(100) not null,
+propcontactno varchar(100) not null,
+propertyaddress varchar(255) not null,
+propadvancemonths varchar(100) not null,
+propadvanceamountpermonth varchar(100) not null,
+propagree varchar(100) not null,
+regdate varchar(150) not null,
+PRIMARY KEY (propid)
+);
+
+=============llpostproperty table latest starts====================
+alter table llpostproperty drop column propagree;
+
+or
+
+create table llpostproperty(
+llloginid varchar(100) not null,
+propid int NOT NULL,
+propcategory varchar(100) not null,
+propfurnished varchar(100) not null,
+propname varchar(255) not null,
+proptype varchar(255) not null,
+proprentamount varchar(100) not null,
+propcontactno varchar(100) not null,
+propertyaddress varchar(255) not null,
+propadvancemonths varchar(100) not null,
+propadvanceamountpermonth varchar(100) not null,
+regdate varchar(150) not null,
+PRIMARY KEY (propid)
+);
+=============llpostproperty table latest ends====================
+
+create table propertyrating(
+rateid int NOT NULL,
+propid varchar(100) not null,
+tenantid varchar(100) not null,
+rate varchar(100) not null,
+date varchar(100) not null,
+PRIMARY KEY (rateid)
+);
+
+create table landlordrating(
+rateid int NOT NULL,
+landlordid varchar(100) not null,
+tenantid varchar(100) not null,
+rate varchar(100) not null,
+date varchar(100) not null,
+PRIMARY KEY (rateid)
+);
+
+create table tenantrating(
+rateid int NOT NULL,
+landlordid varchar(100) not null,
+tenantid varchar(100) not null,
+rate varchar(100) not null,
+date varchar(100) not null,
+PRIMARY KEY (rateid)
+);
+
+create table updatedatabase(
+updateid int NOT NULL AUTO_INCREMENT,
+userid varchar(100) not null,
+firstname varchar(100) not null,
+lastname varchar(100) not null,
+usertype varchar(100) not null,
+regdate varchar(100) not null,
+PRIMARY KEY (updateid,userid)
+);
